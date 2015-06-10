@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Countries and Capitals App</title>
+	<!-- build:css ./_assets/combined.css -->
+	<link rel="stylesheet" href="components/reset.css">
+	<link rel="stylesheet" href="components/style.css">
+	<!-- endbuild -->
+</head>
+<body ng-app="countriesApp">
+	
+	<header id="main">
+		<h1>Countries & Capitals</h1>
+	</header>
+
+	<div ng-view class="fade"></div>
+
+	<!-- build:js ./_assets/combined.js -->
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../bower_components/angular-route/angular-route.min.js"></script>
+	<script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="app.js"></script>
+	<script src="countries/geoRequest.js"></script>
+	<script src="countries/getCountries.js"></script>
+	<script src="countries/getNameList.js"></script>
+	<script src="countries/getNeighbors.js"></script>
+	<script src="home/home.js"></script>
+	<script src="countries/countries.js"></script>
+	<script src="countries/country.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

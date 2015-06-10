@@ -1,0 +1,34 @@
+<div class="container load" ng-class="{loading: country.isLoading}">
+	<h1>{{country.c.countryName}}</h1>
+	<div class="map">
+		<img ng-src="{{country.map}}" alt="map">
+	</div>
+	<div class="row">
+		<label for="">Population of Country: </label>
+		<span>{{country.c.population}}</span>
+	</div>
+	<div class="row">
+		<label for="">Area: </label>
+		<span>{{country.c.areaInSqKm}}</span>
+	</div>
+	<div class="row">
+		<label for="">Capital: </label>
+		<span>{{country.c.capital}}</span>
+	</div>
+	<div class="row">
+		<label for="">Continent: </label>
+		<span>{{country.c.continentName}}</span>
+	</div>
+	<div class="row">
+		<label for="">Neighbors: </label>
+		<span>
+			<a ng-href="#/countries/{{neighbor}}" ng-repeat="neighbor in country.neighbors">{{neighbor}}  </a>
+		</span>
+	</div>
+
+	<footer>
+		<button ng-click="country.home()">Home</button>
+		<button ng-click="country.countries()">Countries</button>
+	</footer>
+	
+</div>

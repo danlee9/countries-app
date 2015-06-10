@@ -1,0 +1,155 @@
+body {
+	box-sizing: border-box;
+}
+
+header {
+	font-size: 2.4em;
+	margin-top: 1.4em;
+}
+
+header, h1, p, footer {
+	text-align: center;
+}
+
+h1, p {
+	margin: 0.7em;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.container {
+	width: 50%;
+	margin: 2em auto;
+}
+
+.container h1 {
+	font-size: 1.5em;
+	color: steelblue;
+}
+
+.row {
+	margin: 1em 0;
+}
+
+.row a {
+	color: blue;
+}
+
+.map {
+	text-align: center;
+}
+
+label {
+	width: 50%;
+	display: inline-block;
+	text-align: right;
+}
+
+#main {
+	border-bottom: 1px solid black;
+	padding-bottom: 0.8em;
+}
+
+#desc {
+	font-size: 1.1em;
+	width: 40%;
+	margin: 2em auto;
+}
+
+table {
+	margin: 2em auto;
+}
+
+thead {
+	display: block;
+	background-color: #aaa;
+	box-sizing: border-box;
+}
+
+tbody {
+	max-height: 500px;
+	overflow-y: scroll;
+	display: block;
+}
+
+tbody tr:hover {
+	cursor: pointer;
+	background-color: steelblue;
+}
+
+th, td {
+	padding: 0.5em;
+	text-align: left;
+}
+
+th {
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+}
+
+td {
+	border: 1px solid black;
+}
+
+tr:nth-child(2n) {
+	background-color: #ddd;
+}
+
+.first {
+	width: 319px;
+}
+
+.second {
+	width: 115px;
+}
+
+.third {
+	width: 217px;
+}
+
+.fourth {
+	width: 112px;
+}
+
+.fifth {
+	width: 97px;
+}
+
+.sixth {
+	width: 114px;
+}
+
+.load {
+	min-height: 300px;
+}
+
+.loading {
+	position: relative;
+	height: 100%;
+}
+
+.loading:before {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+	background:rgba(255,255,255,0.9) no-repeat center center;
+	background-image: url('./loading-animation.gif')
+}
+
+.fade.ng-enter {
+    -webkit-transition:0.5s linear all;
+    transition:0.5s linear all;
+    opacity:0;
+}
+
+.fade.ng-enter.ng-enter-active {
+    opacity:1;
+}
