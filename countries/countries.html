@@ -1,0 +1,29 @@
+
+<div class="load" ng-class="{loading: countries.isLoading}">
+	<table>
+		<thead>
+			<tr>
+				<th class="first">Name</th>
+				<th class="second">Country Code</th>
+				<th class="third">Capital</th>
+				<th class="fourth">Area in km^2</th>
+				<th class="fifth">Population</th>
+				<th class="sixth">Continent</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="country in countries.countries">
+				<td class="first"><a ng-href="#/countries/{{countries.list[$index]}}">{{country.countryName}}</a></td>
+				<td class="second"><a ng-href="#/countries/{{countries.list[$index]}}">{{country.countryCode}}</a></td>
+				<td class="third"><a ng-href="#/countries/{{countries.list[$index]}}">{{country.capital}}</a></td>
+				<td class="fourth"><a ng-href="#/countries/{{countries.list[$index]}}">{{country.areaInSqKm}}</a></td>
+				<td class="fifth"><a ng-href="#/countries/{{countries.list[$index]}}">{{country.population}}</a></td>
+				<td class="sixth"><a ng-href="#/countries/{{countries.list[$index]}}">{{country.continentName}}</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<footer>
+		<button ng-click="countries.click()">Home</button>
+	</footer>
+</div>
