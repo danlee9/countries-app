@@ -2,6 +2,10 @@ angular.module('countriesApp', ['ngRoute', 'ngAnimate']);
 
 var countriesApp = angular.module('countriesApp');
 
+countriesApp.run(['$rootScope', function($rootScope) {
+	$rootScope.loaded = false;
+}]);
+
 countriesApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/', {
 		templateUrl: 'home/home.html',
