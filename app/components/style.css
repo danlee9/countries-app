@@ -59,6 +59,10 @@ label {
 	margin: 2em auto;
 }
 
+#desc img {
+	width: 100%;
+}
+
 table {
 	margin: 2em auto;
 }
