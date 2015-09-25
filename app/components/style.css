@@ -46,6 +46,12 @@ label {
 	width: 50%;
 	display: inline-block;
 	text-align: right;
+	vertical-align: top;
+}
+
+.row span {
+	width: 45%;
+	display: inline-block;
 }
 
 #main {
@@ -156,4 +162,68 @@ tr:nth-child(2n) {
 
 .fade.ng-enter.ng-enter-active {
     opacity:1;
+}
+
+@media (max-width: 1600px) {
+	header {
+		margin-top: 0.7em;
+	}
+
+	header h1 {
+		margin: 0;
+	}
+
+	#desc {
+		width: 50%;
+	}
+}
+
+@media (max-width: 1200px) {
+	#desc {
+		width: 60%;
+	}
+
+	.second {
+		display: none;
+	}
+}
+
+@media (max-width: 1000px) {
+	#desc {
+		width: 70%;
+	}
+
+	.third {
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	#desc {
+		width: 80%;
+	}
+
+	.fourth {
+		display: none;
+	}
+}
+
+@media (max-width: 700px) {
+	#desc {
+		width: 90%;
+	}
+
+	.fifth {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	#desc {
+		width: 95%;
+	}
+
+	.sixth {
+		display: none;;
+	}
 }

@@ -12,7 +12,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr ng-repeat="country in countries.countries">
+			<tr ng-repeat="country in countries.countries" class="clickable-row">
 				<td class="first"><a ng-href="#/countries/{{countries.list[$index]}}">{{country.countryName}}</a></td>
 				<td class="second"><a ng-href="#/countries/{{countries.list[$index]}}">{{country.countryCode}}</a></td>
 				<td class="third"><a ng-href="#/countries/{{countries.list[$index]}}">{{country.capital}}</a></td>
