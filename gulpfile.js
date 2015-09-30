@@ -37,7 +37,9 @@ gulp.task('usemin', [ 'copy' ], function(){
     }))
     .pipe(gulp.dest( paths.build ));
   gulp.src('./app/components/loading-animation.gif')
-    .pipe(gulp.dest('build/assets/'));
+    .pipe(gulp.dest('build/components/'));
+  gulp.src('./app/components/map.PNG')
+    .pipe(gulp.dest('build/components/'));
 });
 
 gulp.task('build', ['usemin']);
