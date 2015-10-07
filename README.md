@@ -5,7 +5,7 @@ Angular App that displays informations about the countries of the world.
 
 Information obtained from http://www.geonames.org/export/web-services.html
 
-Deployed to GHpages: https://github.com/danlee9/countries-app
+Deployed to GHpages: http://danlee9.github.io/countries-app
 
 Demonstrates the following:
 
@@ -29,6 +29,7 @@ Demonstrates the following:
  npm install
  bower install
  gulp build
- cd to app or build
- node server or npm start
+ npm install -g http-server
+ cd app or cd build
+ http-server
 ```
