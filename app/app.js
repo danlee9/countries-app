@@ -38,7 +38,7 @@ countriesApp.config(['$routeProvider', function($routeProvider) {
 							defer.resolve(countries[index]);
 						});
 					})
-					return defer.promise;				
+					return defer.promise;
 				}
 			]
 		}
