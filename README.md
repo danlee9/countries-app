@@ -24,7 +24,7 @@ Demonstrates the following:
  Steps to Run Project (must have have nodejs installed)
 
 ```
- git clone https://github.com/danlee9/reaction-test.git
+ git clone https://github.com/danlee9/countries-app.git
  cd countries-app
  npm install
  bower install
