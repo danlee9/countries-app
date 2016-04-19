@@ -60,8 +60,9 @@ label {
 }
 
 #desc {
-	font-size: 1.1em;
-	width: 40%;
+	font-size: 1.4em;
+	line-height: 1.1em;
+	width: 35%;
 	margin: 2em auto;
 }
 
